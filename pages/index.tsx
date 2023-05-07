@@ -82,6 +82,7 @@ export default function Home() {
                 title={box.title}
                 content={box.content}
                 imagePath={box.imagePath}
+                key={box.title}
               />
             ))}
           </div>

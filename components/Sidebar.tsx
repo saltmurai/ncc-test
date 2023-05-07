@@ -17,6 +17,7 @@ export default function Sidebar({ items }: SidebarItems) {
       <div className="bg-black w-1/6 text-nccGrayText divide-y-2 divide-nccGray">
         {items.map((item: ItemProp) => (
           <div
+            key={item.name}
             className={clsx(
               "bg-black p-2 pl-4 hover:bg-nccGray hover:text-white",
               item.path === router.asPath && "text-white"
